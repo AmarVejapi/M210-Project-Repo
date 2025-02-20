@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rechnungs Quiz</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-<div class="container">
-    <h1>Rechnungs Quiz</h1>
-    <p id="question">5 + 3 = ?</p>
-    <input type="number" id="answer" placeholder="Deine Antwort">
-    <button onclick="checkAnswer()">Überprüfen</button>
-    <p id="feedback"></p>
-    <p>Punkte: <span id="score">0</span></p>
-</div>
-<script src="assets/scripts/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rechnungs Quiz</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1 id="title">Rechnungs Quiz</h1>
+        <p id="question">Lade Frage...</p>
+        <input type="number" id="answer" placeholder="Deine Antwort">
+        <p id="feedback"></p>
+        <p id="score">Punkte: 0</p>
+        <p id="timer">Zeit: 20s</p>
+        <p id="lives">Leben: 5</p>
+    </div>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
