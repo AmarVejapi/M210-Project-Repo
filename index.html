@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechnungs Quiz</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <h1>Hallo Welt</h1>
-    <p>Erster Test</p>
-    <p>Zweiter Test</p>
-    <div>Dritter Test</div>
+<div class="container">
+    <h1>Rechnungs Quiz</h1>
+    <p id="question">5 + 3 = ?</p>
+    <input type="number" id="answer" placeholder="Deine Antwort">
+    <button onclick="checkAnswer()">Überprüfen</button>
+    <p id="feedback"></p>
+    <p>Punkte: <span id="score">0</span></p>
+</div>
+<script src="assets/scripts/script.js"></script>
 </body>
 </html>
-
