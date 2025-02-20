@@ -7,6 +7,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+    position: fixed;  /* Fixiert den Titel außerhalb der Karte */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Sicherstellen, dass der Titel oben bleibt */
 }
 
 .container {
@@ -15,32 +28,54 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
+    width: 300px;
+    position: relative;
+    margin-top: 80px; /* Damit der Inhalt unter dem Titel ist */
 }
 
 input {
     padding: 10px;
     font-size: 16px;
+    cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus {
     outline: none;
     border-color: #4CAF50;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#timer, #score {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#lives {
+    position: fixed;  /* Fixiert die Leben außerhalb der Karte */
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    z-index: 10; /* Sicherstellen, dass die Leben über der Karte sind */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
 }
